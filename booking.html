@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Tickets</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Book Tickets for {{ movie[1] }}</h1>
+    <form method="POST">
+        <label for="num_tickets">Number of Tickets:</label>
+        <input type="number" name="num_tickets" id="num_tickets" required>
+        <br>
+        <input type="submit" value="Book">
+    </form>
+</body>
+</html>

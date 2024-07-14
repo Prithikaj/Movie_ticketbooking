@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Booking Confirmation</h1>
+    <p>Your booking for {{ booking[3] }} tickets has been confirmed.</p>
+    <p>Booking Time: {{ booking[4] }}</p>
+    <p><a href="{{ url_for('movie_list') }}">Return to Movie List</a></p>
+</body>
+</html>
